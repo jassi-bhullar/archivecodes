@@ -1,0 +1,27 @@
+string to int to string
+
+split string to get ints and strings
+
+stringstream
+
+pass array to func
+
+segment tree
+
+int foo(int x) const {---}
+int const foo(int x) {---}
+const int foo(int x) {---}
+
+types of Recursions - tail, multiple, linear
+
+linked list, palindrome, using Recursion in O(n)
+
+mylist1.splice(itr, mylist2, itr_a, itr_b);
+
+2 Pointer Technique - Coins Problem
+
+Priority Queue
+
+Get Table for complexitys of All Associative Containers
+
+stl video tutorials
