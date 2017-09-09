@@ -1,4 +1,4 @@
-string to int to string
+string to int to string :- stoi() and to_string for -std=c++11
 
 split string to get ints and strings
 
@@ -25,3 +25,15 @@ Priority Queue
 Get Table for complexitys of All Associative Containers
 
 stl video tutorials
+
+find GCD of more than 2 numbers
+
+size of array, is the memory blocks connected or scatterd like Linked List
+
+Print all elements of a level in BTREE
+
+Check if given btree is symmetrical
+
+Find no. of unlabeled btree's with n nodes using P & C.
+
+Backtrack Problem : N-Queens for NxN chess board problem

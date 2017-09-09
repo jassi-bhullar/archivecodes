@@ -1,21 +1,47 @@
-#include <iostream>
-#include <string>
+#include <bits/stdc++.h>
+using namespace std;
 
-int main()
-{
-    std::string str1 = "45";
-    std::string str2 = "3.14159";
-    std::string str3 = "31337 with words";
-    std::string str4 = "words and 2";
- 
-    int myint1 = std::stoi(str1);
-    int myint2 = std::stoi(str2);
-    int myint3 = std::stoi(str3);
-    // error: 'std::invalid_argument'
-    // int myint4 = std::stoi(str4);
- 
-    std::cout << "std::stoi(\"" << str1 << "\") is " << myint1 << '\n';
-    std::cout << "std::stoi(\"" << str2 << "\") is " << myint2 << '\n';
-    std::cout << "std::stoi(\"" << str3 << "\") is " << myint3 << '\n';
-    //std::cout << "std::stoi(\"" << str4 << "\") is " << myint4 << '\n';
+// template <typename T>
+// void DisplayArr(T arr[],int size){
+//   for(int i=0; i<size; i++){
+//     cout << arr[i] << endl;
+//   }
+// }
+
+void Display(int *arr,int size){
+  for(int i=0; i<size; i++){
+    cout << arr[i] << " ";
+  }
+  cout << endl;
+}
+
+// void foo(int* x, int size){
+//   for(int i=0; i<size; i++){
+//     *x -= 2;
+//     ++x;
+//   }
+// }
+
+int main(){
+  int a[12] = {5,6,7,6,23,3,23,8,5,9,23,34};
+  int bits[34] = {0};
+  
+  for(int i=0; i<12; i++){
+    bits[a[i]-1]++;
+  }
+
+  Display(a,12);
+
+  int i = 0;
+  while(i < 34){
+    if(bits[i]==0)
+      ++i;
+    else {
+      cout << i+1 << " ";
+      --bits[i];
+    }
+  }
+  cout << endl;
+
+  return 0;
 }
