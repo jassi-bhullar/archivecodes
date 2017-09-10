@@ -1,46 +1,26 @@
+// tail recusrion example 
+
+// void foo(int n, int running_total = 0)
 #include <bits/stdc++.h>
 using namespace std;
 
-// template <typename T>
-// void DisplayArr(T arr[],int size){
-//   for(int i=0; i<size; i++){
-//     cout << arr[i] << endl;
-//   }
-// }
+int foo(){
 
-void Display(int *arr,int size){
-  for(int i=0; i<size; i++){
-    cout << arr[i] << " ";
+  for (int i=0; i<7; i++){
+    if(i==3) return i;
+    cout << i << " time\n";// endl;
   }
-  cout << endl;
 }
 
-// void foo(int* x, int size){
-//   for(int i=0; i<size; i++){
-//     *x -= 2;
-//     ++x;
-//   }
-// }
-
 int main(){
-  int a[12] = {5,6,7,6,23,3,23,8,5,9,23,34};
-  int bits[34] = {0};
-  
-  for(int i=0; i<12; i++){
-    bits[a[i]-1]++;
-  }
+  int i=0;
+  int a[] = {6,2,2,-23,5,16};
+  vector<int> s(a,a+6);
 
-  Display(a,12);
+  sort(s.begin(), s.end());
 
-  int i = 0;
-  while(i < 34){
-    if(bits[i]==0)
-      ++i;
-    else {
-      cout << i+1 << " ";
-      --bits[i];
-    }
-  }
+  for(vector<int>::iterator itr=s.begin(); itr!=s.end(); ++itr)
+    cout << *itr << " ";
   cout << endl;
 
   return 0;

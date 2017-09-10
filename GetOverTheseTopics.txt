@@ -7,6 +7,7 @@ stringstream
 pass array to func
 
 segment tree
+ternary tree
 
 int foo(int x) const {---}
 int const foo(int x) {---}
@@ -37,3 +38,9 @@ Check if given btree is symmetrical
 Find no. of unlabeled btree's with n nodes using P & C.
 
 Backtrack Problem : N-Queens for NxN chess board problem
+
+balanced btree: height = O(Log n) ???
+
+Minimum dist bewteen two nodes in BTREE
+
+Minimum no. of swaps in array to sort it (array can have same elements)
