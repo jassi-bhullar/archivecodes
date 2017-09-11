@@ -6,6 +6,8 @@ stringstream
 
 pass array to func
 
+
+
 segment tree
 ternary tree
 
@@ -44,3 +46,6 @@ balanced btree: height = O(Log n) ???
 Minimum dist bewteen two nodes in BTREE
 
 Minimum no. of swaps in array to sort it (array can have same elements)
+:here for findIndex() func, instead make index[] array as
+index[a[i]] = i
+then call value at index of X as: a[index[X]]

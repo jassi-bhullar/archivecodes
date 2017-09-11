@@ -1,0 +1,1 @@
+scrolling (all 4 directions) and parallax in 2d, say for platformer
